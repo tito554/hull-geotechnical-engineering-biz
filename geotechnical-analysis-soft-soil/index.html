@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#8B4513) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Common questions</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>What are the main risks of tunnelling through Hull's soft clays?</summary><p>The main risks are face instability due to low undrained shear strength and long-term consolidation settlements. The estuarine clays in Hull are normally consolidated to lightly overconsolidated, so volume loss at the face can lead to significant surface settlement over weeks or months. Proper characterisation of Cv and permeability is essential to predict and manage these effects.</p></details><details><summary>How does a geotechnical analysis for soft soil tunnels differ from a standard site investigation?</summary><p>A standard investigation might focus on bearing capacity and foundation design. For soft soil tunnels, the emphasis shifts to undrained shear strength, stiffness at small strains, consolidation behaviour, and permeability. We also run more in-situ tests like CPT and pressuremeter to capture continuous profiles, because tunnel design needs to account for variability along the entire alignment, not just at discrete borehole locations.</p></details><details><summary>What is the typical cost range for a soft ground tunnel geotechnical study in Hull?</summary><p>For a typical urban tunnel project in Hull, the cost ranges from £3,140 to £12,390 depending on the number of boreholes, depth of investigation, and the extent of laboratory testing required. This covers field work, UKAS-accredited lab tests, and a full interpretive report with design parameters.</p></details></div></section>
+<details><summary>What are the main risks of tunnelling through Hull's soft clays?</summary><p>The main risks are face instability due to low undrained shear strength and long-term consolidation settlements. The estuarine clays in Hull are normally consolidated to lightly overconsolidated, so volume loss at the face can lead to significant surface settlement over weeks or months. Proper characterisation of Cv and permeability is essential to predict and manage these effects.</p></details><details><summary>How does a geotechnical analysis for soft soil tunnels differ from a standard site investigation?</summary><p>A standard investigation might focus on bearing capacity and foundation design. For soft soil tunnels, the emphasis shifts to undrained shear strength, stiffness at small strains, consolidation behaviour, and permeability. We also run more in-situ tests like CPT and pressuremeter to capture continuous profiles, because tunnel design needs to account for variability along the entire alignment, not just at discrete borehole locations.</p></details><details><summary>What is the typical cost range for a soft ground tunnel geotechnical study in Hull?</summary><p>For a typical urban tunnel project in Hull, the cost ranges from £3,140 to £12,390 depending on the number of boreholes, depth of investigation, and the extent of <a href="/laboratory/">laboratory</a> testing required. This covers field work, UKAS-accredited lab tests, and a full interpretive report with design parameters.</p></details></div></section>
 
 
 
